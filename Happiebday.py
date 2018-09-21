@@ -1,7 +1,6 @@
 from pygame import mixer
-import PIL
+from PIL import ImageTk
 from  Tkinter import *
-import Image
 import time
 
 global i,j
@@ -55,12 +54,12 @@ root = Tk()
 root.title("HAPPIEE BDAY!!")
 
 
-pic2 = PhotoImage(file="bday.png")
+pic2 = ImageTk.PhotoImage(file="bday.png")
 label2=Label(root,image=pic2)
 label2.grid()
 
 
-pic = PhotoImage(file="Happy.png")
+pic = ImageTk.PhotoImage(file="Happy.png")
 label=Label(root,image=pic)
 label.grid()
 
@@ -70,8 +69,8 @@ mixer.music.load('Bday.mp3')
 
 #images
 
-img2=PhotoImage(file="pause.gif")
-img3=PhotoImage(file="play.gif")
+img2=ImageTk.PhotoImage(file="pause.gif")
+img3=ImageTk.PhotoImage(file="play.gif")
 
 #play = Button(root,image =img, command = stpl)
 pause= Button(root,image=img3, command = plpa)
